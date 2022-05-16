@@ -9,7 +9,7 @@ class Zucchina {
     }
   }
   
-const zuccchina = new Zucchina("verde",520,20)
+const zuccchina0 = new Zucchina("verde",520,20)
 const zuccchina1 = new Zucchina("rigata",520,20)
 const zuccchina2 = new Zucchina("tonda",520,20)
 const zuccchina3 = new Zucchina("trombetta",520,20)
