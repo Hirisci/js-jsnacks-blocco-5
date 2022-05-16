@@ -9,15 +9,22 @@ class Zucchina {
     }
   }
   
-const zuccchina0 = new Zucchina("verde",520,20)
-const zuccchina1 = new Zucchina("rigata",520,20)
-const zuccchina2 = new Zucchina("tonda",520,20)
-const zuccchina3 = new Zucchina("trombetta",520,20)
-const zuccchina4 = new Zucchina("sicilina",520,20)
-const zuccchina5 = new Zucchina("nera",520,20)
-const zuccchina6 = new Zucchina("milano",520,20)
-const zuccchina7 = new Zucchina("faenza",520,20)
-const zuccchina8 = new Zucchina("roamana",520,20)
-const zuccchina9 = new Zucchina("toscana",520,20)
+const arr = [new Zucchina("verde",520,16),
+                    new Zucchina("rigata",420,3),
+                    new Zucchina("tonda",620,3),
+                    new Zucchina("trombetta",425,4),
+                    new Zucchina("sicilina",320,20),
+                    new Zucchina("nera",220,16),
+                    new Zucchina("milano",320,9),
+                    new Zucchina("faenza",420,12),
+                    new Zucchina("roamana",620,10),
+                    new Zucchina("toscana",720,5)]
 
-console.log(zuccchina0)
+let totale = 0
+for (let i = 0; i < arr.length; i++) {
+    totale = arr[i].height;    
+}
+
+let msg = `Il peso delle zucchine è di ${totale} grammi`
+
+console.log(msg)
