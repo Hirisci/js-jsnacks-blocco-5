@@ -2,7 +2,7 @@
 // Calcola quanto pesano tutte le zucchine.
 
 class Zucchina {
-    constructor(height, width,type) {
+    constructor(type, height, width) {
       this.height = height;
       this.width = width;
       this.type = type;
@@ -22,7 +22,7 @@ const arr = [new Zucchina("verde",520,16),
 
 let totale = 0
 for (let i = 0; i < arr.length; i++) {
-    totale = arr[i].height;    
+    totale += arr[i].height;    
 }
 
 let msg = `Il peso delle zucchine è di ${totale} grammi`
