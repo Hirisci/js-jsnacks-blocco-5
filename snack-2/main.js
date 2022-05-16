@@ -22,24 +22,21 @@ const arr = [new Zucchina("verde",520,16),
 
 let arrMaggiore = [];
 let arrMinore = []
+let pesoMax = 0
+let pesoMin=0;
 for (let i = 0; i < arr.length; i++) {
     if(arr[i].width>=15){
-      arrMaggiore.push(arr[i])
+      arrMaggiore.push(arr[i]);
+      persoMax += arr[i].height;
     } else{
-      arrMinore.push(arr[i])
+      arrMinore.push(arr[i]);
+      persoMin += arr[i].height;
     }   
 }
 
-let totale = 0
-for (let i = 0; i < arrMaggiore.length; i++) {
-    totale += arrMaggiore[i].height;    
-}
-let msg = `Il peso delle zucchine che misurano più di 15cm è di ${totale} grammi`
-totale=0;
-for (let i = 0; i < arrMinore.length; i++) {
-  totale += arrMinore[i].height;    
-}
 
-msg += `Invece le minori pesano ${totale} grammi`
+
+let msg = `Il peso delle zucchine che misurano più di 15cm è di ${pesoMax} grammi Invece le minori pesano ${pesoMin} grammi`
+
 
 console.log(msg)
