@@ -34,8 +34,8 @@ let totale = 0
 for (let i = 0; i < arrMaggiore.length; i++) {
     totale += arrMaggiore[i].height;    
 }
-totale=0;
 let msg = `Il peso delle zucchine che misurano più di 15cm è di ${totale} grammi`
+totale=0;
 for (let i = 0; i < arrMinore.length; i++) {
   totale += arrMinore[i].height;    
 }
