@@ -5,9 +5,9 @@ const model = ["Bmw", "Fiat", "Ferrari", "Lamborghini"]
 
 class Car {
 	constructor(carType, colori , model) {
-		this.carType = Math.floor(Math.random() * carType);
-		this.colori = Math.floor(Math.random() * colori);
-		this.model = Math.floor(Math.random() * model);
+		this.carType = carType[Math.floor(Math.random() * carType.length)];
+		this.colori = colori[Math.floor(Math.random() * colori.length)];
+		this.model = model[Math.floor(Math.random() * model.length)];
 	} 	    
 }
 
@@ -17,4 +17,8 @@ for (let i = 0; i < 10; i++) {
     garage.push(new Car(carType,colori,model))
 }
 
+
+console.log(garage.filter(elm => elm.carType==="Benzina"))
+console.log(garage.filter(elm => elm.carType==="Disel"))
+console.log(garage.filter(elm => elm.catType!=="Benzina" && elm.carType!=="Disel"))
 
